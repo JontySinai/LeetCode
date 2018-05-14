@@ -15,16 +15,16 @@ def twoSum(nums, target):
     nums_set = set(nums)
 
     for idx in range(n):
-        dif = target - nums[idx]
+        dif = target - nums[idx] # complement
 
         if dif in nums_set:
-            dif_idx = nums.index(dif)
+            dif_idx = nums.index(dif) # check that complement isn't self
             if idx != dif_idx:
                 if idx < dif_idx:
                     return [idx, dif_idx]
                 else:
                     return [dif_idx, idx]
-                break
+                
 
 
 nums = [3,4,3]
