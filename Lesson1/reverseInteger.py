@@ -63,7 +63,7 @@ def reverse_modulo(x):
     while x_pos != 0:
         reverse *= 10
         reverse += x_pos % 10
-        x_pos = int(x_pos/10)
+        x_pos = x_pos // 10
 
     if x < 0:
         reverse = -reverse
